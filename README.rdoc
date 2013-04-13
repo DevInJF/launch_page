@@ -1,0 +1,58 @@
+=== Viral Launch Page
+
+User stories
+1.0
+- Visitor can view homepage
+- Visitor can subcribe via email on the homepage
+- Visitor will be prompt to create pwd after giving email
+- Visitor can login
+- Visitor will see their 'profile' page with unique link
+- Visitor gets email after signing up and prompt to share
+- Visitor can invite their friends by emailing them
+- Admin can see list of subcribers
+
+
+2.0
+- Visitor gets points for each successful referral
+- Visitor gets email prompt when their friends sign up
+
+3.0
+- Visitor can facebook connect to send invite message through facebook
+- Visitor will see a list of their friends as suggestions to invite
+- Visitor can authorize with google to send to google contacts
+- Visitor can tweet about it
+
+4.0
+- Admin can modify text, html, css and logo
+
+
+
+============Database
+----users----
+email
+password_hash
+is_admin
+unique_link
+referral_id #who referred?
+
+
+----referrals----
+introducer_id
+referred_email
+
+
+
+==============Methods wanted from ActiveRecord
+user.referrals #=> the referrals made by user
+user.successful_referrals #=> users who signed up because of user
+user.referred_by #> who referred this user?
+referral.introducer #> who made this referral?
+
+referral = Referral.find_by_email(params[:email])
+if referral
+  user = User.new(email: params[:email])
+  user.referred_by = referral.introducer
+  user.save
+else
+  #do something else
+end
