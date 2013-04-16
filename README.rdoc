@@ -62,7 +62,7 @@ end
 
 
 
-HTML, CSS, positioning, the DOM
+HTML, CSS, positioning, the DOM (use bootstrap + flat UI)
 JavaScript, jQuery, DOM manipulation, OOJS (survey form)
 Web applications, HTTP, request-response cycle, HTML forms
 Synchronous requests, asynchronous requests, AJAX (finding friends from fb)
