@@ -56,3 +56,21 @@ if referral
 else
   #do something else
 end
+
+
+
+
+
+
+HTML, CSS, positioning, the DOM
+JavaScript, jQuery, DOM manipulation, OOJS (survey form)
+Web applications, HTTP, request-response cycle, HTML forms
+Synchronous requests, asynchronous requests, AJAX (finding friends from fb)
+Sinatra, MVC on the web, ActiveRecord, ERB 
+Databases, constraints, built-in validations, custom validations
+Authentication, authorization, OAuth (login)
+APIs, API clients, the Twitter API (FB, google)
+Workers, task queues, background tasks, scheduled tasks (email user in background, send 2 day email to remidn them to invite friends)
+Back-end and front-end performance, caching, UX (cache friend list from facebook, don't need to retrieve every day)
+
+
